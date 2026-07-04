@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AEL Markdown CMS — Ayman Elmasry</title>
+  <link rel="icon" type="image/svg+xml" href="ael-logo.svg">
+  <link rel="stylesheet" href="ael_markdown_cms.css">
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="noise"></div>
+
+  <nav class="navbar glass" id="navbar">
+    <div class="nav-brand">
+      <img src="ael-logo.svg" alt="AEL" class="nav-logo-img">
+      <div class="nav-title"><span class="nav-name">AYMAN ELMASRY</span><span class="nav-studio">AEL Digital Studio</span></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#overview" class="nav-link active">Overview</a>
+      <a href="#editor" class="nav-link">Editor</a>
+      <a href="#preview" class="nav-link">Preview</a>
+      <a href="#documents" class="nav-link">Documents</a>
+      <a href="#export" class="nav-link">Export</a>
+      <a href="#about" class="nav-link">About</a>
+    </div>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- Overview -->
+  <section id="overview" class="section active">
+    <div class="section-bg"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+    <div class="container hero">
+      <div class="hero-badge glass"><span class="badge-dot"></span> v1.0 — AEL Studio</div>
+      <h1 class="hero-title"><span class="text-gradient">AEL Markdown</span><span class="hero-sub">CMS</span></h1>
+      <p class="hero-desc">A lightweight markdown editor with live preview, document management, and export — built from scratch with zero dependencies.</p>
+      <div class="hero-stats">
+        <div class="stat-card glass"><span class="stat-icon">📝</span><span class="stat-value">Live</span><span class="stat-label">Preview</span></div>
+        <div class="stat-card glass"><span class="stat-icon">💾</span><span class="stat-value">Auto</span><span class="stat-label">Local Save</span></div>
+        <div class="stat-card glass"><span class="stat-icon">📂</span><span class="stat-value">Multi</span><span class="stat-label">Documents</span></div>
+        <div class="stat-card glass"><span class="stat-icon">📤</span><span class="stat-value">3</span><span class="stat-label">Export Types</span></div>
+      </div>
+      <div class="showcase-preview glass">
+        <svg viewBox="0 0 560 200" width="100%" style="max-width:560px">
+          <rect x="20" y="10" width="250" height="180" rx="10" fill="rgba(1,5,14,.5)" stroke="rgba(0,116,255,.2)" stroke-width="1"/>
+          <text x="35" y="35" fill="#a5d6ff" font-family="monospace" font-size="11" font-weight="bold"># Hello World</text>
+          <text x="35" y="55" fill="#9ab3e6" font-family="monospace" font-size="10">This is **bold** and *italic* text.</text>
+          <text x="35" y="75" fill="#9ab3e6" font-family="monospace" font-size="10">- List item 1</text>
+          <text x="35" y="90" fill="#9ab3e6" font-family="monospace" font-size="10">- List item 2</text>
+          <text x="35" y="110" fill="#64748b" font-family="monospace" font-size="9">1. Ordered 1</text>
+          <text x="35" y="125" fill="#64748b" font-family="monospace" font-size="9">2. Ordered 2</text>
+          <text x="35" y="145" fill="#64748b" font-family="monospace" font-size="9">`code block`</text>
+          <text x="35" y="170" fill="#64748b" font-family="monospace" font-size="9">---</text>
+          <text x="35" y="185" fill="#64748b" font-family="monospace" font-size="9">&gt; blockquote</text>
+          <rect x="290" y="10" width="250" height="180" rx="10" fill="rgba(5,12,24,.5)" stroke="rgba(0,116,255,.2)" stroke-width="1"/>
+          <text x="310" y="35" fill="#eef2ff" font-family="sans-serif" font-size="16" font-weight="bold">Hello World</text>
+          <text x="310" y="55" fill="#9ab3e6" font-family="sans-serif" font-size="11">This is <tspan font-weight="bold">bold</tspan> and <tspan font-style="italic">italic</tspan> text.</text>
+          <circle cx="315" cy="72" r="2" fill="#9ab3e6"/><text x="325" y="76" fill="#9ab3e6" font-family="sans-serif" font-size="11">List item 1</text>
+          <circle cx="315" cy="88" r="2" fill="#9ab3e6"/><text x="325" y="92" fill="#9ab3e6" font-family="sans-serif" font-size="11">List item 2</text>
+          <text x="310" y="112" fill="#9ab3e6" font-family="sans-serif" font-size="11">1. Ordered 1</text>
+          <text x="310" y="127" fill="#9ab3e6" font-family="sans-serif" font-size="11">2. Ordered 2</text>
+          <rect x="310" y="140" width="80" height="18" rx="4" fill="rgba(1,5,14,.7)"/>
+          <text x="320" y="153" fill="#4d9bff" font-family="monospace" font-size="9">code block</text>
+          <line x1="310" y1="167" x2="520" y2="167" stroke="rgba(255,255,255,.1)"/>
+          <text x="310" y="185" fill="#64748b" font-family="sans-serif" font-size="11" font-style="italic">blockquote</text>
+        </svg>
+      </div>
+      <a href="#editor" class="btn-primary glass" id="heroCta">Start Writing <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </section>
+
+  <!-- Editor -->
+  <section id="editor" class="section">
+    <div class="section-bg"><div class="orb orb-1"></div></div>
+    <div class="container">
+      <div class="section-header"><span class="section-badge glass">📝 Editor</span><h2>Markdown Editor</h2><p>Write markdown with live HTML preview side by side</p></div>
+      <div class="editor-toolbar glass">
+        <div class="toolbar-group">
+          <button class="tool-btn" data-wrap="**" data-before="**" data-after="**" title="Bold"><strong>B</strong></button>
+          <button class="tool-btn" data-wrap="*" data-before="*" data-after="*" title="Italic"><em>I</em></button>
+          <button class="tool-btn" data-wrap="~~" data-before="~~" data-after="~~" title="Strikethrough"><s>S</s></button>
+          <span class="toolbar-sep"></span>
+          <button class="tool-btn" data-line="# " title="Heading"><strong>H</strong></button>
+          <button class="tool-btn" data-line="## " title="Heading 2">H2</button>
+          <button class="tool-btn" data-line="### " title="Heading 3">H3</button>
+          <span class="toolbar-sep"></span>
+          <button class="tool-btn" data-line="- " title="List">•</button>
+          <button class="tool-btn" data-line="1. " title="Ordered List">1.</button>
+          <button class="tool-btn" data-line="> " title="Blockquote">❝</button>
+          <button class="tool-btn" data-line="```\n\n```" title="Code Block">&lt;/&gt;</button>
+          <span class="toolbar-sep"></span>
+          <button class="tool-btn" data-line="---\n" title="Horizontal Rule">—</button>
+          <button class="tool-btn" data-wrap="[" data-before="[" data-after="](url)" title="Link">🔗</button>
+        </div>
+      </div>
+      <div class="editor-split glass">
+        <div class="editor-pane">
+          <div class="editor-header"><span class="editor-label">Markdown</span><span class="editor-char-count" id="charCount">0</span></div>
+          <textarea class="editor-textarea" id="mdEditor" placeholder="Write your markdown here..." spellcheck="false"></textarea>
+        </div>
+        <div class="editor-divider"></div>
+        <div class="preview-pane">
+          <div class="editor-header"><span class="editor-label">Preview</span></div>
+          <div class="preview-content" id="livePreview">
+            <p style="color:var(--text-muted);font-size:13px">Start typing to see the live preview...</p>
+          </div>
+        </div>
+      </div>
+      <div class="editor-actions">
+        <input type="text" class="doc-title-input" id="docTitle" placeholder="Document title..." value="Untitled">
+        <button class="btn-primary glass" id="saveDocBtn">Save Document</button>
+        <button class="btn-secondary glass" id="clearEditorBtn">Clear</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preview -->
+  <section id="preview" class="section">
+    <div class="section-bg"><div class="orb orb-2"></div></div>
+    <div class="container">
+      <div class="section-header"><span class="section-badge glass">👁️ Preview</span><h2>Full Preview</h2><p>Rendered HTML output of your markdown document</p></div>
+      <div class="full-preview glass" id="fullPreview">
+        <div class="full-preview-empty">
+          <span class="full-preview-icon">📝</span>
+          <p>No content to preview</p>
+          <p class="full-preview-sub">Write something in the editor first</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documents -->
+  <section id="documents" class="section">
+    <div class="section-bg"><div class="orb orb-1"></div></div>
+    <div class="container">
+      <div class="section-header"><span class="section-badge glass">📂 Documents</span><h2>Saved Documents</h2><p>All your documents are stored locally in your browser</p></div>
+      <div class="documents-controls">
+        <button class="btn-primary glass" id="newDocBtn">+ New Document</button>
+        <button class="btn-secondary glass" id="exportAllBtn">Export All</button>
+      </div>
+      <div class="documents-list glass" id="documentsList">
+        <div class="documents-empty">
+          <span class="documents-empty-icon">📂</span>
+          <p>No saved documents</p>
+          <p class="documents-empty-sub">Create a document in the editor and save it here</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Export -->
+  <section id="export" class="section">
+    <div class="section-bg"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+    <div class="container">
+      <div class="section-header"><span class="section-badge glass">📤 Export</span><h2>Export Document</h2><p>Download your document in your preferred format</p></div>
+      <div class="export-grid">
+        <div class="export-card glass" id="exportHtmlCard">
+          <span class="export-card-icon">🌐</span>
+          <h3>HTML</h3>
+          <p>Rendered HTML document with styling</p>
+          <button class="btn-primary glass" id="exportHtmlBtn">Export HTML</button>
+        </div>
+        <div class="export-card glass" id="exportMdCard">
+          <span class="export-card-icon">📝</span>
+          <h3>Markdown</h3>
+          <p>Raw markdown source file</p>
+          <button class="btn-primary glass" id="exportMdBtn">Export MD</button>
+        </div>
+        <div class="export-card glass" id="exportPlainCard">
+          <span class="export-card-icon">📄</span>
+          <h3>Plain Text</h3>
+          <p>Plain text without formatting</p>
+          <button class="btn-primary glass" id="exportTxtBtn">Export TXT</button>
+        </div>
+      </div>
+      <pre class="export-preview glass" id="exportPreview"><code>No content to export. Write something in the editor first.</code></pre>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="section-bg"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+    <div class="container">
+      <div class="section-header"><span class="section-badge glass">ℹ️ About</span><h2>About AEL Markdown CMS</h2><p>A lightweight markdown editor by AEL Digital Studio</p></div>
+      <div class="about-grid">
+        <div class="about-card glass"><h3>📋 Overview</h3><p>AEL Markdown CMS is a client-side markdown editor with live preview, document management, and export. Built with a custom markdown parser — no external libraries.</p></div>
+        <div class="about-card glass"><h3>⚡ Features</h3><ul class="about-list"><li>Live preview as you type</li><li>Split pane editor/preview</li><li>Toolbar for common markdown</li><li>Document save/load/delete</li><li>Export as HTML, MD, TXT</li><li>Auto-save to localStorage</li></ul></div>
+        <div class="about-card glass"><h3>🛠 Tech Stack</h3><ul class="about-list"><li><strong>HTML5</strong> — Semantic structure</li><li><strong>CSS3</strong> — Glassmorphism, split pane, responsive</li><li><strong>JavaScript</strong> — Custom markdown parser, localStorage, File API</li></ul></div>
+        <div class="about-card glass"><h3>👤 Author</h3><p><strong>Ayman Elmasry</strong><br>AEL Digital Studio</p><p class="about-version">Version 1.0 — 2026</p><p class="about-license">MIT License — Free for personal and commercial use</p></div>
+      </div>
+      <div class="about-footer glass"><p>&copy; 2026 Ayman Elmasry — AEL Digital Studio. All rights reserved.</p><p class="about-tagline">Built with a custom markdown parser — zero dependencies</p></div>
+    </div>
+  </section>
+
+  <script src="ael_markdown_cms.js"></script>
+</body>
+</html>

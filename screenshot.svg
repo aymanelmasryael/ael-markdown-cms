@@ -1,0 +1,51 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" style="background:radial-gradient(circle at 20% 30%,#030712,#000)">
+  <rect x="0" y="0" width="800" height="500" fill="none"/>
+  <rect x="25" y="20" width="750" height="55" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.4)" stroke-width="1"/>
+  <text x="45" y="55" fill="#eef2ff" font-family="monospace" font-size="14" font-weight="bold">AYMAN ELMASRY</text>
+  <text x="175" y="55" fill="#8db7ff" font-family="monospace" font-size="11">AEL Digital Studio</text>
+
+  <text x="400" y="105" fill="#fff" font-family="monospace" font-size="26" font-weight="bold" text-anchor="middle">AEL Markdown CMS</text>
+  <text x="400" y="128" fill="#9ab3e6" font-family="monospace" font-size="12" text-anchor="middle">Split-pane markdown editor with live preview, document management, and 3 export formats</text>
+
+  <rect x="40" y="145" width="360" height="210" rx="12" fill="rgba(1,5,14,.5)" stroke="rgba(0,116,255,.2)" stroke-width="1"/>
+  <rect x="40" y="145" width="360" height="30" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.15)" stroke-width="1"/>
+  <rect x="40" y="145" width="180" height="30" fill="rgba(5,12,24,.7)" rx="0"/>
+  <text x="55" y="164" fill="#64748b" font-family="monospace" font-size="9" text-transform="uppercase">Markdown</text>
+  <text x="330" y="164" fill="#64748b" font-family="monospace" font-size="9" text-anchor="end">0 chars</text>
+  <text x="55" y="195" fill="#a5d6ff" font-family="monospace" font-size="13"># Hello World</text>
+  <text x="55" y="215" fill="#9ab3e6" font-family="monospace" font-size="11">This is **bold** text</text>
+  <text x="55" y="235" fill="#9ab3e6" font-family="monospace" font-size="11">- List item</text>
+  <text x="55" y="255" fill="#64748b" font-family="monospace" font-size="11">1. Ordered</text>
+  <text x="55" y="275" fill="#64748b" font-family="monospace" font-size="11">&gt; Quote</text>
+  <text x="55" y="295" fill="#64748b" font-family="monospace" font-size="10">---</text>
+  <text x="55" y="315" fill="#64748b" font-family="monospace" font-size="11">Normal paragraph text</text>
+  <text x="55" y="335" fill="#64748b" font-family="monospace" font-size="10">`inline code`</text>
+
+  <rect x="410" y="145" width="350" height="210" rx="12" fill="rgba(5,12,24,.5)" stroke="rgba(0,116,255,.2)" stroke-width="1"/>
+  <rect x="410" y="145" width="350" height="30" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.15)" stroke-width="1"/>
+  <rect x="555" y="145" width="205" height="30" fill="rgba(5,12,24,.7)" rx="0"/>
+  <text x="570" y="164" fill="#64748b" font-family="monospace" font-size="9" text-transform="uppercase">Preview</text>
+
+  <text x="430" y="195" fill="#eef2ff" font-family="sans-serif" font-size="20" font-weight="bold">Hello World</text>
+  <text x="430" y="218" fill="#9ab3e6" font-family="sans-serif" font-size="13">This is <tspan font-weight="bold">bold</tspan> text</text>
+  <circle cx="435" cy="235" r="2.5" fill="#9ab3e6"/>
+  <text x="445" y="239" fill="#9ab3e6" font-family="sans-serif" font-size="12">List item</text>
+  <text x="430" y="258" fill="#9ab3e6" font-family="sans-serif" font-size="12">1. Ordered</text>
+  <rect x="430" y="270" width="200" height="30" rx="6" fill="rgba(0,116,255,.05)"/>
+  <text x="440" y="283" fill="#64748b" font-family="sans-serif" font-size="12" font-style="italic">— Quote</text>
+  <line x1="430" y1="308" x2="700" y2="308" stroke="rgba(255,255,255,.08)"/>
+  <text x="430" y="328" fill="#9ab3e6" font-family="sans-serif" font-size="13">Normal paragraph text</text>
+  <rect x="430" y="338" width="80" height="16" rx="4" fill="rgba(1,5,14,.7)"/>
+  <text x="438" y="350" fill="#4d9bff" font-family="monospace" font-size="9">inline code</text>
+
+  <rect x="40" y="370" width="720" height="40" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.25)" stroke-width="1"/>
+  <input rx="6" fill="rgba(1,5,14,.7)"/>
+  <text x="60" y="394" fill="#4a5a7a" font-family="monospace" font-size="11">Document title...</text>
+  <rect x="230" y="378" width="120" height="24" rx="40" fill="#0074FF"/>
+  <text x="290" y="395" fill="#fff" font-family="monospace" font-size="9" text-anchor="middle">Save Document</text>
+  <text x="380" y="394" fill="#64748b" font-family="monospace" font-size="10">📂 3 documents saved</text>
+  <text x="560" y="394" fill="#64748b" font-family="monospace" font-size="10">Export: HTML · MD · TXT</text>
+
+  <rect x="40" y="425" width="720" height="50" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.4)" stroke-width="1"/>
+  <text x="400" y="450" fill="#64748b" font-family="monospace" font-size="11" text-anchor="middle">© 2026 Ayman Elmasry — AEL Digital Studio | Markdown CMS v1.0 — Custom parser, zero dependencies</text>
+</svg>
