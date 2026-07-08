@@ -1,51 +1,104 @@
-<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" style="background:radial-gradient(circle at 20% 30%,#030712,#000)">
-  <rect x="0" y="0" width="800" height="500" fill="none"/>
-  <rect x="25" y="20" width="750" height="55" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.4)" stroke-width="1"/>
-  <text x="45" y="55" fill="#eef2ff" font-family="monospace" font-size="14" font-weight="bold">AYMAN ELMASRY</text>
-  <text x="175" y="55" fill="#8db7ff" font-family="monospace" font-size="11">AEL Digital Studio</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#03050A"/>
+      <stop offset="100%" stop-color="#0B0E1A"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EFF3FC"/>
+      <stop offset="100%" stop-color="#0074FF"/>
+    </linearGradient>
+    <linearGradient id="lineGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0074FF"/>
+      <stop offset="50%" stop-color="#0074FF"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
 
-  <text x="400" y="105" fill="#fff" font-family="monospace" font-size="26" font-weight="bold" text-anchor="middle">AEL Markdown CMS</text>
-  <text x="400" y="128" fill="#9ab3e6" font-family="monospace" font-size="12" text-anchor="middle">Split-pane markdown editor with live preview, document management, and 3 export formats</text>
+  <rect x="40" y="30" width="1120" height="70" rx="8" fill="none" stroke="rgba(0,116,255,0.08)" stroke-width="1"/>
+  <g transform="translate(60,44) scale(0.15)">
+    <path d="m97.19,48.59v16.2h-32.4v-16.2c0-8.94-7.25-16.2-16.2-16.2s-16.2,7.25-16.2,16.2v16.2H0v-16.2c0-5.68.98-11.13,2.76-16.2C9.44,13.52,27.44,0,48.59,0s39.16,13.52,45.83,32.4c1.79,5.07,2.76,10.52,2.76,16.2Z" fill="#ffffff"/>
+    <rect y="97.19" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="64.79" y="97.19" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="64.79" y="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect y="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="129.58" y="97.19" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="161.98" y="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="194.38" y="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="129.58" y="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="161.98" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="129.58" y="32.4" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="32.4" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="64.79" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="97.19" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="129.58" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="161.98" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="194.38" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+  </g>
+  <text x="104" y="65" font-family="Inter,sans-serif" font-weight="600" font-size="18" fill="url(#brand)">AEL · MARKDOWN CMS</text>
+  <text x="104" y="82" font-family="'Jetbrains Mono',monospace" font-size="9" fill="#7F8CFF">Lightweight Editor with Live Preview — Custom Markdown Parser</text>
+  <rect x="920" y="45" width="220" height="38" rx="20" fill="rgba(0,116,255,0.08)" stroke="rgba(0,116,255,0.15)" stroke-width="1"/>
+  <text x="940" y="68" font-family="'Jetbrains Mono',monospace" font-size="11" fill="#0074FF" font-weight="600">3 FORMATS</text>
 
-  <rect x="40" y="145" width="360" height="210" rx="12" fill="rgba(1,5,14,.5)" stroke="rgba(0,116,255,.2)" stroke-width="1"/>
-  <rect x="40" y="145" width="360" height="30" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.15)" stroke-width="1"/>
-  <rect x="40" y="145" width="180" height="30" fill="rgba(5,12,24,.7)" rx="0"/>
-  <text x="55" y="164" fill="#64748b" font-family="monospace" font-size="9" text-transform="uppercase">Markdown</text>
-  <text x="330" y="164" fill="#64748b" font-family="monospace" font-size="9" text-anchor="end">0 chars</text>
-  <text x="55" y="195" fill="#a5d6ff" font-family="monospace" font-size="13"># Hello World</text>
-  <text x="55" y="215" fill="#9ab3e6" font-family="monospace" font-size="11">This is **bold** text</text>
-  <text x="55" y="235" fill="#9ab3e6" font-family="monospace" font-size="11">- List item</text>
-  <text x="55" y="255" fill="#64748b" font-family="monospace" font-size="11">1. Ordered</text>
-  <text x="55" y="275" fill="#64748b" font-family="monospace" font-size="11">&gt; Quote</text>
-  <text x="55" y="295" fill="#64748b" font-family="monospace" font-size="10">---</text>
-  <text x="55" y="315" fill="#64748b" font-family="monospace" font-size="11">Normal paragraph text</text>
-  <text x="55" y="335" fill="#64748b" font-family="monospace" font-size="10">`inline code`</text>
+  <line x1="40" y1="115" x2="1160" y2="115" stroke="rgba(0,116,255,0.06)" stroke-width="1"/>
 
-  <rect x="410" y="145" width="350" height="210" rx="12" fill="rgba(5,12,24,.5)" stroke="rgba(0,116,255,.2)" stroke-width="1"/>
-  <rect x="410" y="145" width="350" height="30" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.15)" stroke-width="1"/>
-  <rect x="555" y="145" width="205" height="30" fill="rgba(5,12,24,.7)" rx="0"/>
-  <text x="570" y="164" fill="#64748b" font-family="monospace" font-size="9" text-transform="uppercase">Preview</text>
+  <text x="60" y="185" font-family="Inter,sans-serif" font-weight="800" font-size="44" fill="#EFF3FC">Markdown CMS</text>
+  <text x="60" y="220" font-family="Inter,sans-serif" font-weight="400" font-size="16" fill="#7F8CFF">A lightweight markdown editor with live preview, split-pane interface, document management, and 3 export formats — powered by a custom zero-dependency parser</text>
 
-  <text x="430" y="195" fill="#eef2ff" font-family="sans-serif" font-size="20" font-weight="bold">Hello World</text>
-  <text x="430" y="218" fill="#9ab3e6" font-family="sans-serif" font-size="13">This is <tspan font-weight="bold">bold</tspan> text</text>
-  <circle cx="435" cy="235" r="2.5" fill="#9ab3e6"/>
-  <text x="445" y="239" fill="#9ab3e6" font-family="sans-serif" font-size="12">List item</text>
-  <text x="430" y="258" fill="#9ab3e6" font-family="sans-serif" font-size="12">1. Ordered</text>
-  <rect x="430" y="270" width="200" height="30" rx="6" fill="rgba(0,116,255,.05)"/>
-  <text x="440" y="283" fill="#64748b" font-family="sans-serif" font-size="12" font-style="italic">— Quote</text>
-  <line x1="430" y1="308" x2="700" y2="308" stroke="rgba(255,255,255,.08)"/>
-  <text x="430" y="328" fill="#9ab3e6" font-family="sans-serif" font-size="13">Normal paragraph text</text>
-  <rect x="430" y="338" width="80" height="16" rx="4" fill="rgba(1,5,14,.7)"/>
-  <text x="438" y="350" fill="#4d9bff" font-family="monospace" font-size="9">inline code</text>
+  <rect x="60" y="260" width="255" height="130" rx="12" fill="rgba(0,116,255,0.04)" stroke="rgba(0,116,255,0.10)" stroke-width="1"/>
+  <rect x="60" y="260" width="255" height="3" rx="1.5" fill="url(#lineGlow)"/>
+  <text x="80" y="295" font-family="Inter,sans-serif" font-weight="700" font-size="36" fill="#0074FF">0</text>
+  <text x="80" y="318" font-family="Inter,sans-serif" font-weight="600" font-size="14" fill="#EFF3FC">External Dependencies</text>
+  <text x="80" y="338" font-family="Inter,sans-serif" font-weight="400" font-size="12" fill="#5A6B8A">Custom-built markdown parser — no marked.js, no showdown, no libraries</text>
 
-  <rect x="40" y="370" width="720" height="40" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.25)" stroke-width="1"/>
-  <input rx="6" fill="rgba(1,5,14,.7)"/>
-  <text x="60" y="394" fill="#4a5a7a" font-family="monospace" font-size="11">Document title...</text>
-  <rect x="230" y="378" width="120" height="24" rx="40" fill="#0074FF"/>
-  <text x="290" y="395" fill="#fff" font-family="monospace" font-size="9" text-anchor="middle">Save Document</text>
-  <text x="380" y="394" fill="#64748b" font-family="monospace" font-size="10">📂 3 documents saved</text>
-  <text x="560" y="394" fill="#64748b" font-family="monospace" font-size="10">Export: HTML · MD · TXT</text>
+  <rect x="345" y="260" width="255" height="130" rx="12" fill="rgba(0,116,255,0.04)" stroke="rgba(0,116,255,0.10)" stroke-width="1"/>
+  <rect x="345" y="260" width="255" height="3" rx="1.5" fill="url(#lineGlow)"/>
+  <text x="365" y="295" font-family="Inter,sans-serif" font-weight="700" font-size="36" fill="#0074FF">3</text>
+  <text x="365" y="318" font-family="Inter,sans-serif" font-weight="600" font-size="14" fill="#EFF3FC">Export Formats</text>
+  <text x="365" y="338" font-family="Inter,sans-serif" font-weight="400" font-size="12" fill="#5A6B8A">HTML, Markdown, and Plain Text with one-click download</text>
 
-  <rect x="40" y="425" width="720" height="50" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.4)" stroke-width="1"/>
-  <text x="400" y="450" fill="#64748b" font-family="monospace" font-size="11" text-anchor="middle">© 2026 Ayman Elmasry — AEL Digital Studio | Markdown CMS v1.0 — Custom parser, zero dependencies</text>
+  <rect x="630" y="260" width="255" height="130" rx="12" fill="rgba(0,116,255,0.04)" stroke="rgba(0,116,255,0.10)" stroke-width="1"/>
+  <rect x="630" y="260" width="255" height="3" rx="1.5" fill="url(#lineGlow)"/>
+  <text x="650" y="295" font-family="Inter,sans-serif" font-weight="700" font-size="36" fill="#0074FF">13</text>
+  <text x="650" y="318" font-family="Inter,sans-serif" font-weight="600" font-size="14" fill="#EFF3FC">Markdown Patterns</text>
+  <text x="650" y="338" font-family="Inter,sans-serif" font-weight="400" font-size="12" fill="#5A6B8A">Headings, bold, italic, code, links, images, lists, tables, blockquotes</text>
+
+  <rect x="915" y="260" width="225" height="130" rx="12" fill="rgba(0,116,255,0.04)" stroke="rgba(0,116,255,0.10)" stroke-width="1"/>
+  <rect x="915" y="260" width="225" height="3" rx="1.5" fill="url(#lineGlow)"/>
+  <text x="935" y="295" font-family="Inter,sans-serif" font-weight="700" font-size="36" fill="#0074FF">LS</text>
+  <text x="935" y="318" font-family="Inter,sans-serif" font-weight="600" font-size="14" fill="#EFF3FC">localStorage Persistence</text>
+  <text x="935" y="338" font-family="Inter,sans-serif" font-weight="400" font-size="12" fill="#5A6B8A">Save, load, and delete documents with instant operations</text>
+
+  <line x1="60" y1="420" x2="1140" y2="420" stroke="rgba(0,116,255,0.06)" stroke-width="1"/>
+
+  <rect x="60" y="445" width="225" height="55" rx="10" fill="rgba(0,116,255,0.04)" stroke="rgba(0,116,255,0.08)" stroke-width="1"/>
+  <circle cx="90" cy="472" r="12" fill="rgba(0,116,255,0.12)"/>
+  <text x="90" y="477" font-family="Inter,sans-serif" font-size="12" fill="#0074FF" text-anchor="middle">L</text>
+  <text x="112" y="465" font-family="Inter,sans-serif" font-weight="600" font-size="13" fill="#EFF3FC">Live Preview</text>
+  <text x="112" y="483" font-family="Inter,sans-serif" font-size="11" fill="#5A6B8A">See rendered HTML as you type</text>
+
+  <rect x="305" y="445" width="225" height="55" rx="10" fill="rgba(0,116,255,0.04)" stroke="rgba(0,116,255,0.08)" stroke-width="1"/>
+  <circle cx="335" cy="472" r="12" fill="rgba(0,116,255,0.12)"/>
+  <text x="335" y="477" font-family="Inter,sans-serif" font-size="12" fill="#0074FF" text-anchor="middle">S</text>
+  <text x="357" y="465" font-family="Inter,sans-serif" font-weight="600" font-size="13" fill="#EFF3FC">Split Pane</text>
+  <text x="357" y="483" font-family="Inter,sans-serif" font-size="11" fill="#5A6B8A">Editor and preview side by side</text>
+
+  <rect x="550" y="445" width="225" height="55" rx="10" fill="rgba(0,116,255,0.04)" stroke="rgba(0,116,255,0.08)" stroke-width="1"/>
+  <circle cx="580" cy="472" r="12" fill="rgba(0,116,255,0.12)"/>
+  <text x="580" y="477" font-family="Inter,sans-serif" font-size="12" fill="#0074FF" text-anchor="middle">T</text>
+  <text x="602" y="465" font-family="Inter,sans-serif" font-weight="600" font-size="13" fill="#EFF3FC">Formatting Toolbar</text>
+  <text x="602" y="483" font-family="Inter,sans-serif" font-size="11" fill="#5A6B8A">Quick markdown formatting with one click</text>
+
+  <rect x="795" y="445" width="345" height="55" rx="10" fill="rgba(0,116,255,0.04)" stroke="rgba(0,116,255,0.08)" stroke-width="1"/>
+  <circle cx="825" cy="472" r="12" fill="rgba(0,116,255,0.12)"/>
+  <text x="825" y="477" font-family="Inter,sans-serif" font-size="12" fill="#0074FF" text-anchor="middle">D</text>
+  <text x="847" y="465" font-family="Inter,sans-serif" font-weight="600" font-size="13" fill="#EFF3FC">Document Management</text>
+  <text x="847" y="483" font-family="Inter,sans-serif" font-size="11" fill="#5A6B8A">Save, load, delete, and export all documents</text>
+
+  <text x="60" y="600" font-family="'Jetbrains Mono',monospace" font-size="10" fill="#3B4A6B">(c) 2026 Ayman Elmasry — AEL Digital Studio</text>
+  <text x="1140" y="600" font-family="'Jetbrains Mono',monospace" font-size="10" fill="#3B4A6B" text-anchor="end">ael-markdown-cms</text>
 </svg>
