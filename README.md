@@ -77,11 +77,10 @@ The parser handles these patterns:
 ```
 ael-markdown-cms/
 ├── index.html                  # HTML5 semantic structure
-├── css/
-│   └── style.css               # All styles (glassmorphism, split pane)
-├── js/
-│   └── script.js               # Full JS engine (parser, editor, storage, export)
+├── ael_markdown_cms.css        # All styles (glassmorphism, split pane)
+├── ael_markdown_cms.js         # Full JS engine (parser, editor, storage, export)
 ├── screenshot.svg              # Project preview image
+├── .nojekyll
 ├── .gitignore
 └── README.md
 ```
@@ -178,7 +177,7 @@ Or simply open `index.html` in any modern browser — no server required.
 **Created by:** Ayman Elmasry — AEL Digital Studio  
 **Website:** [aymanelmasry.com](https://aymanelmasry.com)  
 **Email:** [info@aymanelmasry.com](mailto:info@aymanelmasry.com)  
-**License:** © 2026 Ayman Elmasry — AEL Digital Studio. All rights reserved.
+**License:** MIT License — Free for personal and commercial use.
 
 ### Connect
 
